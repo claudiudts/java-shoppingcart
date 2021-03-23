@@ -38,10 +38,10 @@ public class CartController
         @PathVariable
             long productid)
     {
-        CartItem addCartTtem = cartItemService.addToCart(userid,
+        CartItem addCartItem = cartItemService.addToCart(userid,
             productid,
             "I am not working");
-        return new ResponseEntity<>(addCartTtem,
+        return new ResponseEntity<>(addCartItem,
             HttpStatus.OK);
     }
 
